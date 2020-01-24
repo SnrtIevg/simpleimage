@@ -4,10 +4,9 @@
 	<parent>
 		<groupId>com.alibaba</groupId>
 		<artifactId>simpleimage.parent</artifactId>
-		<version>1.2.4</version>
+		<version>1.2.7</version>
 	</parent>
 
-	<groupId>com.alibaba</groupId>
 	<artifactId>simpleimage.analyze</artifactId>
 	<name>simpleimage.analyze</name>
 	<packaging>jar</packaging>
@@ -23,7 +22,7 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>simpleimage.core</artifactId>
-			<version>1.2.4</version>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
