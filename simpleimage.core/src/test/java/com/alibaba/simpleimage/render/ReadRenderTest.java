@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
+import com.alibaba.simpleimage.view.ImagePanel;
 import junit.framework.TestCase;
 
 import org.apache.commons.io.IOUtils;
@@ -32,7 +33,7 @@ public class ReadRenderTest extends TestCase {
      * Test method for {@link com.alibaba.simpleimage.render.ReadRender#ReadRender(java.io.InputStream, boolean)}.
      */
     public void testReadRenderInputStreamBoolean() throws Exception {
-        File file = new File(path, "334.jpg");
+        File file = new File(path, "ball.jpg");
         InputStream input = null;
         ImageWrapper img = null;
         ImageRender rr = null;
@@ -41,6 +42,7 @@ public class ReadRenderTest extends TestCase {
             input = new FileInputStream(file);
             rr = new ReadRender(input, true);
             img = rr.render();
+            ImagePanel.show(img);
             assertNotNull(img);
 
         } finally {
@@ -106,6 +108,8 @@ public class ReadRenderTest extends TestCase {
             input = new FileInputStream(file);
             rr = new ReadRender(input);
             img = rr.render();
+            System.out.println("width: " + img.getWidth());
+            System.out.println("height: " + img.getHeight());
             assertNotNull(img);
 
         } finally {

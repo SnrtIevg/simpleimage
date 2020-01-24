@@ -28,8 +28,10 @@ import org.w3c.dom.Node;
 import com.alibaba.simpleimage.util.NodeUtils;
 
 /**
- * 这个类存在的意义在于可以比BufferedImage和PlanarImage提供更多的图片的源信息，同时可以保存像GIF这样多副图片的图片格式。 比如说可以保存JPEG的quality，采样参数等
- * 对于PNG，BMP和GIF这三类无损压缩的图片格式，quality并没有意义 这里设置为93只是表示，这三类图片一旦按JPEG格式保存的话，默认的quality是93
+ * 这个类存在的意义在于可以比BufferedImage和PlanarImage提供更多的图片的源信息，
+ * 同时可以保存像GIF这样多副图片的图片格式。 比如说可以保存JPEG的quality，采样参数等
+ * 对于PNG，BMP和GIF这三类无损压缩的图片格式，quality并没有意义 这里设置为93只是表示，
+ * 这三类图片一旦按JPEG格式保存的话，默认的quality是93
  * 
  * @author wendell
  */
